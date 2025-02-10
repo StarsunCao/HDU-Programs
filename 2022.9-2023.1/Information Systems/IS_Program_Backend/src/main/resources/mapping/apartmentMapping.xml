@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace是用于绑定Dao接口的，即面向接口编程-->
+<!--修改1-->
+<mapper namespace="cn.group22.mapper.apartmentMapper">
+    <!--修改2-->
+    <resultMap id="apartmentResultMap" type="cn.group22.entity.apartment">
+<!--         主键设置-->
+        <id column="Apartment_ID" jdbcType="INTEGER" property="Apartment_ID"/>
+<!-- 修改4非主键类    -->
+        <result column="Address" jdbcType="VARCHAR" property="Address"/>
+        <result column="Description" jdbcType="VARCHAR" property="Description"/>
+        <result column="Picture" jdbcType="VARCHAR" property="Picture"/>
+        <result column="User_ID" jdbcType="INTEGER" property="User_ID"/>
+        <result column="Price" jdbcType="INTEGER" property="Price"/>
+        <result column="Email" jdbcType="VARCHAR" property="Email"/>
+    </resultMap>
+
+    <select id="findByApartmentID" resultMap="apartmentResultMap">
+        select * from apartment where Apartment_ID = #{Apartment_ID}
+    </select>
+
+    <insert id="addApartment" parameterType="cn.group22.entity.apartment">
+        insert into apartment values(#{Apartment_ID},#{Address},#{Description},#{Picture},#{User_ID},#{Price},#{Email})
+    </insert>
+
+    <update id="updateApartment" parameterType="cn.group22.entity.apartment">
+        update apartment
+        set Address = #{Address},
+        Description = #{Description},
+        Picture = #{Picture},
+        Price = #{Price},
+        Email = #{Email}
+        where Apartment_ID = #{Apartment_ID};
+    </update>
+
+    <delete id="delApartment" parameterType="cn.group22.entity.apartment">
+        delete from apartment where Apartment_ID = #{Apartment_ID}
+    </delete>
+
+    <select id="searchApartment" resultMap="apartmentResultMap">
+        select * from apartment where concat(Address,Description) like '%${Keywords}%'
+    </select>
+
+</mapper>

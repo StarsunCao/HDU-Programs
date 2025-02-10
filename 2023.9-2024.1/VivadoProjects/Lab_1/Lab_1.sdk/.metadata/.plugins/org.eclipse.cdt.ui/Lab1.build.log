@@ -1,0 +1,21 @@
+19:04:09 **** Auto Build of configuration Debug for project Lab1 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Lab1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab1.elf  |tee "Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3880	    268	   3108	   7256	   1c58	Lab1.elf
+'Finished building: Lab1.elf.size'
+' '
+
+19:04:10 Build Finished (took 767ms)
+

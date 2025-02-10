@@ -1,0 +1,9 @@
+lab5_tb.v
+mult.v
+adder.v
+dev.v
+master.v
+slave.v
+spi_master.v
+bus_slave.v
+periph_dev.v

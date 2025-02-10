@@ -1,0 +1,5 @@
+INSERT INTO `sh_address`(`id`, `consignee_name`, `consignee_phone`, `province_name`, `city_name`, `region_name`, `detail_address`, `default_flag`, `user_id`) VALUES (36, '王国栋', '12345678910', '男生宿舍', '14号楼', '二层', '205，楼道东边，靠着厕所', 1, 40);
+INSERT INTO `sh_address`(`id`, `consignee_name`, `consignee_phone`, `province_name`, `city_name`, `region_name`, `detail_address`, `default_flag`, `user_id`) VALUES (37, '李佳伟', '98765432110', '男生宿舍', '11号楼', '三层', '305楼道东侧挨着厕所', 1, 36);
+INSERT INTO `sh_address`(`id`, `consignee_name`, `consignee_phone`, `province_name`, `city_name`, `region_name`, `detail_address`, `default_flag`, `user_id`) VALUES (38, '程建国', '18713790195', '男生宿舍', '11号楼', '二层', '205', 1, 37);
+INSERT INTO `sh_address`(`id`, `consignee_name`, `consignee_phone`, `province_name`, `city_name`, `region_name`, `detail_address`, `default_flag`, `user_id`) VALUES (39, '张莉莉', '15263698569', '女生宿舍', '9号楼', '一层', '103 楼道最东边', 1, 38);
+INSERT INTO `sh_address`(`id`, `consignee_name`, `consignee_phone`, `province_name`, `city_name`, `region_name`, `detail_address`, `default_flag`, `user_id`) VALUES (40, '李娜', '15896565656', '女生宿舍', '9号楼', '四层', '406 楼道最东边，按着厕所', 1, 39);

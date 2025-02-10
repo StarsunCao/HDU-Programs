@@ -1,0 +1,21 @@
+Circuit: * C:\Users\Starsun Cao\OneDrive\Learning Materials\2021.9-2022.1\Electrical Engineering\Lab\03\Star-star2\Star-star2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Oct 27 16:46:51 2021
+Total elapsed time: 0.105 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 23858
+traniter = 23855
+tranpoints = 11916
+accept = 7594
+rejected = 4322
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1: 292 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 658 bytes object code size  0.1/0.1/[0.1]
+

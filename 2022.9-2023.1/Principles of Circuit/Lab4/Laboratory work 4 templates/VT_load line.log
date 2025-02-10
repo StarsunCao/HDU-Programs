@@ -1,0 +1,37 @@
+Questionable use of curly braces in "b2 0 n003  i={{p}}/{v(v2)}"
+    Error: undefined symbol in: "[v](v2)"
+Circuit: * C:\Users\a\OneDrive\Learning Materials\2022.9-2023.1\Principles of Circuit\Lab_4\Laboratory work 4 templates\VT_load line.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+.step i1=0
+.step i1=0.0006
+.step i1=0.0012
+.step i1=0.0018
+.step i1=0.0024
+.step i1=0.003
+.step i1=0.0036
+.step i1=0.0042
+.step i1=0.0048
+.step i1=0.0054
+.step i1=0.006
+
+Date: Tue Dec 06 22:01:18 2022
+Total elapsed time: 0.300 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 22484
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1:      27 opcodes  0.1/[0.0]/0.1
+Matrix Compiler2: 640 bytes object code size  0.1/0.1/[0.0]
+

@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* 搜索栏样式 */
+
+.container {
+    width: 500px;
+    height: 50px;
+    margin: 100px auto;
+}
+
+.parent {
+    width: 100%;
+    height: 42px;
+    top: 4px;
+    position: relative;
+}
+
+.parent>input:first-of-type {
+    /*输入框高度设置为40px, border占据2px，总高度为42px*/
+    width: 380px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.search {
+    border: 1px solid #317ef3;
+    padding-left: 10px;
+}
+
+.parent>input:last-of-type {
+    /*button按钮border并不占据外围大小，设置高度42px*/
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    background: #317ef3;
+    border: 1px solid #317ef3;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* body 样式 */
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* 标题 */
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+
+/* 标题字体加大 */
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+/* 导航 */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+/* 导航栏样式 */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* 右侧链接*/
+
+.navbar a.right {
+    float: right;
+}
+
+
+/* 鼠标移动到链接的颜色 */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* 列容器 */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+/* 创建两个列 */
+
+
+/* 边栏 */
+
+.side {
+    -ms-flex: 30%;
+    flex: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 1000px;
+    width: 100px;
+    overflow-y: auto;
+    overflow-y: scroll;
+}
+.side::-webkit-scrollbar { /* 滚动条整体样式 */
+  width: 6px; /* 高宽分别对应横竖滚动条的尺寸 */
+  height: 8px;
+
+}
+
+.side::-webkit-scrollbar-thumb { /* 滚动条内滑块的样式 */
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.11);
+  background: #5d7cd7;
+}
+
+.side::-webkit-scrollbar-track { /* 滚动条里面轨道的样式 */
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background: darkgray;
+}
+
+
+/* 主要的内容区域 */
+
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* 测试图片 */
+
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.fakeimg:hover {
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+    padding: 20px;
+}
+
+.overflow {
+    font-size: 10px;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.prise {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.word {
+    font-size: 10px;
+    color: black;
+}
+
+
+/* 底部 */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

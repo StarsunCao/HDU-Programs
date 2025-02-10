@@ -1,0 +1,7 @@
+Circuit: * C:\Users\a\OneDrive\Learning Materials\2022.9-2023.1\Principles of Circuit\lab1\Draft1.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+Fatal Error: No analysis request found.

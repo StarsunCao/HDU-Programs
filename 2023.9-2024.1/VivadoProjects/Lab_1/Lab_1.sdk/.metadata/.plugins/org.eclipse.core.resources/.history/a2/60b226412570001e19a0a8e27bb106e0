@@ -1,0 +1,68 @@
+#include "xil_io.h"
+
+#define AXI_GPIO_OUT_ADDR 0x40000000
+#define AXI_GPIO_IN_ADDR 0x40000008
+
+int getInValue()
+{
+	int value = Xil_In16(AXI_GPIO_IN_ADDR);
+
+	while((value & 0x8000) == 0)
+		value = Xil_In16(AXI_GPIO_IN_ADDR);
+	value = value & 0x00FF;
+	Xil_Out16(AXI_GPIO_OUT_ADDR,0x4000);
+	Xil_Out16(AXI_GPIO_OUT_ADDR,0x0000);
+
+	return value;
+}
+
+void outputResult(int value)
+{
+	value = (value & 0x00FF) | 0x8000;
+	Xil_Out16(AXI_GPIO_OUT_ADDR,value);
+
+	value = value & 0x7FFF;
+	Xil_Out16(AXI_GPIO_OUT_ADDR,value);
+}
+
+int main(){
+    int A[10][10];
+    int B[10][10];
+    int C[10][10] = {0};
+
+    for(int i = 0; i < 10; i++){
+    	for(int j = 0; j < 10; j++){
+    		A[i][j] = getInValue();
+    	}
+    }
+    for(int i = 0; i < 10; i++){
+    	for(int j = 0; j < 10; j++){
+    		B[i][j] = getInValue();
+    	}
+    }
+
+    int temp[10][10] = {0};
+
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            temp[i][j] = A[i][j] - B[i][j];
+        }
+    }
+
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            for (int k = 0; k < 10; k++) {
+                C[i][j] += A[i][k] * temp[k][j];
+            }
+        }
+    }
+
+    for(int i = 0; i<10; i++){
+        for(int j = 0; j<10; j++){
+            outputResult(C[i][j]);
+        }
+    }
+
+    while (1);
+    return 0;
+};

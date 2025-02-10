@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 19 17:08:24 2023
+# Process ID: 5928
+# Current directory: C:/Users/a/VivadoProjects/Lab_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21848 C:\Users\a\VivadoProjects\Lab_1\Lab_1.xpr
+# Log file: C:/Users/a/VivadoProjects/Lab_1/vivado.log
+# Journal file: C:/Users/a/VivadoProjects/Lab_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/a/VivadoProjects/Lab_1/Lab_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {2 494 -505} [get_bd_cells rst_clk_wiz_1_100M]
+set_property location {1 89 -300} [get_bd_cells clk_wiz_1]
+save_bd_design
+set_property location {1 101 -312} [get_bd_cells clk_wiz_1]
+save_bd_design
+launch_sdk -workspace C:/Users/a/VivadoProjects/Lab_1/Lab_1.sdk -hwspec C:/Users/a/VivadoProjects/Lab_1/Lab_1.sdk/design_1_wrapper.hdf
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/sequencer.sv w ]
+add_files -fileset sim_1 C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/sequencer.sv
+update_compile_order -fileset sim_1

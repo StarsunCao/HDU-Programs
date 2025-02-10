@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd,1697085509,vhdl,,,,design_1_axi_gpio_0_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v,1697085509,verilog,,C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/sim/design_1.v,,design_1_clk_wiz_1_0,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v,1697085509,verilog,,C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v,,design_1_clk_wiz_1_0_clk_wiz,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd,1697085509,vhdl,,,,design_1_dlmb_bram_if_cntlr_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd,1697085509,vhdl,,,,design_1_dlmb_v10_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd,1697085509,vhdl,,,,design_1_ilmb_bram_if_cntlr_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd,1697085509,vhdl,,,,design_1_ilmb_v10_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v,1697085509,verilog,,C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v,,design_1_lmb_bram_0,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd,1697085509,vhdl,,,,design_1_microblaze_0_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd,1697085509,vhdl,,,,design_1_rst_clk_wiz_1_100m_0,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.ip_user_files/bd/design_1/sim/design_1.v,1697085509,verilog,,C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v,,design_1;design_1_microblaze_0_axi_periph_0;microblaze_0_local_memory_imp_1K0VQXK;s00_couplers_imp_1RZP34U,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.sim/sim_1/behav/xsim/glbl.v,1697085509,verilog,,,,glbl,,,,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/monitor.sv,1697973036,systemVerilog,,C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/sequencer.sv,,monitor,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/sequencer.sv,1697865349,systemVerilog,,,,sequencer,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sim_1/new/tb1.v,1697870998,verilog,,,,tb,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,
+C:/Users/a/VivadoProjects/Lab_1/Lab_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v,1697085509,verilog,,,,design_1_wrapper,,,../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923,,,,,

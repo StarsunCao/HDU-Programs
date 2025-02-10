@@ -1,0 +1,25 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000014269b86630 .scope module, "adder" "adder" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "a_bi";
+    .port_info 1 /INPUT 32 "b_bi";
+    .port_info 2 /OUTPUT 32 "c_bo";
+o0000014269c46938 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000014269b86de0_0 .net "a_bi", 31 0, o0000014269c46938;  0 drivers
+o0000014269c46968 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0000014269b867c0_0 .net "b_bi", 31 0, o0000014269c46968;  0 drivers
+v0000014269b86860_0 .net "c_bo", 31 0, L_0000014269b86900;  1 drivers
+L_0000014269b86900 .arith/sum 32, o0000014269c46938, o0000014269c46968;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "adder.v";

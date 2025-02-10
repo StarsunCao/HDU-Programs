@@ -1,0 +1,140 @@
+body {
+    /*remove all margins*/
+    margin: 0;
+    /* use fonts: */
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+/* we need to create wrapper to put all html inside <div class="wrapper">...</div> to center it */
+.wrapper {
+    margin: auto;
+    /*you can change max width to experiment with layout*/
+    max-width: 75%;
+}
+
+.topnav {
+    overflow: hidden; /* will trim content of topnav div when it's width greater that width of div */
+    background-color:skyblue;
+    display: flex; /* use flexbox layout to create responsive design */
+    flex-direction: row; /* put all content of our topnav div in single row*/
+    font-size: 30px; 
+    text-align: center;
+}
+
+/*this class will applied for all child <a> elements inside <div class="topnav">...</a>*/
+.topnav a {
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* need to remove all decoration of text: underline, in this case */
+    font-size: 17px;
+}
+
+/* this selector applies when mose is hovers the <a> element */
+.topnav a:hover {
+    background-color:rgb(59, 164, 206);
+}
+
+.topnav a.active {
+    background-color:steelblue;
+    color: white;
+}
+
+/* we want to has the last item in our menu located in the right side */
+.topnav a:last-child {
+    margin-left:auto;
+}
+
+/* this is media-query. We use it to put elements of topnav div in one column when
+we have not enought width of screen to display in one line, e.g., 500 pixels.*/
+@media (max-width: 500px) {
+    .topnav {
+        flex-direction: column;
+    }
+    .topnav a:last-child {
+        margin-left: 0;
+    }
+}
+
+/* STEP 1.2 - personal info blocks */
+
+/*container for personal information (photo and info)*/
+.personal-info {
+    padding-top: 2px;
+}
+
+/* Create two equal columns that floats next to each other */
+.personal-info-col-left {
+    float: left;
+    width: 30%;
+}
+
+/*set max width of image 100% of parent container (<div class="personal-info-col-left">)*/
+.personal-info-col-left img {
+    max-width: 100%;
+}
+
+/*width 69% instead of 70% because we need space to padding-left: 2px */
+.personal-info-col-right {
+    float: right;
+    width: 69%;
+    padding-left:2px;
+}
+
+/* Clear floats after the columns */
+.personal-info:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+    .personal-info-col-left {
+        width: 100%;
+    }
+    .personal-info-col-right {
+        width: 100%;    
+    }
+}
+.personal-info-col-right h2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.personal-info-item {
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+.personal-info-item-label {
+    flex: 25%;
+}
+.personal-info-item-value {
+    flex: 75%;
+}
+
+/* STEP 1.3 - posts */
+.post-container {
+    padding-top: 2px;
+}
+.post {
+    margin-top: 5px;
+    border: 1px solid black;
+}
+.post-header {
+    background-color: skyblue;
+    color:black;
+    width: auto;  
+    margin-bottom: 3px;
+}
+.post-header span {
+    display: block;
+    padding-top: 5px;
+    padding-left: 2px;
+    font-weight: bold;
+    height: 25px;
+}
+.post-content {
+    padding: 5px;
+}

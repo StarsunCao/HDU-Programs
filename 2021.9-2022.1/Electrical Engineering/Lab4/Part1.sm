@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7561.40250"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>705839c3-e4f2-4e73-a62f-1c2967092b01</id>
+      <revision>6</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7561.40250" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7561.40250" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="PlotRegion" version="1.11.7561.40250" guid="c451c2b5-798b-4f08-b9ec-b90963d1ddaa" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="74" height="24" color="#000000" fontSize="10">
+      <math error="25">
+        <input>
+          <e type="operand">Uin</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="0" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L</e>
+          <e type="operand">2.945</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="9" width="117" height="33" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">C</e>
+          <e type="operand">3.44</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="18" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Uon</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="36" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Rk</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="36" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">71</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="72" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">RC</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="108" width="131" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τ</e>
+          <e type="operand">R</e>
+          <e type="operand">C</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0002</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="126" width="145" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ttr</e>
+          <e type="operand">3</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0007</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="144" width="208" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ton</e>
+          <e type="operand">ttr</e>
+          <e type="operand">0.0002</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0009</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="162" width="169" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Tper</e>
+          <e type="operand">2</e>
+          <e type="operand">ton</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0019</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="198" width="189" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iin</e>
+          <e type="operand">Uon</e>
+          <e type="operand">Uin</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">R</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1972</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="234" width="62" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iss</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="270" width="114" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Uexp1</e>
+          <e type="operand">3.77</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="288" width="102" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Uexp2</e>
+          <e type="operand">9.65</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="306" width="201" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δU</e>
+          <e type="operand">Uexp2</e>
+          <e type="operand">Uexp1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">13.42</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="324" width="235" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Uend</e>
+          <e type="operand">Uexp1</e>
+          <e type="operand">0.95</e>
+          <e type="operand">δU</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.979</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="342" width="149" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">tend</e>
+          <e type="operand">612.6</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="297" top="342" width="191" height="61" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">I</e>
+          <e type="operand">Uon</e>
+          <e type="operand">Uin</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">R</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">e</e>
+          <e type="operand">x</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+          <e type="bracket">(</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="378" width="164" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δexp</e>
+          <e type="operand">tend</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0002</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="414" width="135" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δexp</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">204.2</e>
+        </result>
+      </math>
+    </region>
+    <region left="306" top="414" width="265" height="52" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">Uc</e>
+          <e type="operand">Uon</e>
+          <e type="operand">1</e>
+          <e type="operand">e</e>
+          <e type="operand">x</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Uin</e>
+          <e type="operand">e</e>
+          <e type="operand">x</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="468" width="28" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">RL</e>
+        </input>
+      </math>
+    </region>
+    <region left="306" top="495" width="367" height="235" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="82.0954022774263" scale_y="16252.6047626029" scale_z="82.0954022774263" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-113" transpose_y="-88" transpose_z="0">
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">I</e>
+        </input>
+      </plot>
+    </region>
+    <region left="0" top="504" width="142" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τ</e>
+          <e type="operand">L</e>
+          <e type="operand">R</e>
+          <e type="operand">Rk</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.031</e>
+        </result>
+      </math>
+    </region>
+    <region left="162" top="513" width="93" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">3</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.093</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="540" width="78" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ton</e>
+          <e type="operand">0.1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="558" width="110" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Tperiod</e>
+          <e type="operand">0.2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="594" width="170" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iexp1</e>
+          <e type="operand">36.39</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="621" width="157" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iexp2</e>
+          <e type="operand">99.53</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="666" width="209" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">δI</e>
+          <e type="operand">Iexp2</e>
+          <e type="operand">Iexp1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1359</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="684" width="243" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iend</e>
+          <e type="operand">Iexp1</e>
+          <e type="operand">δI</e>
+          <e type="operand">0.95</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0927</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="702" width="143" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iend</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">92.734</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="738" width="125" height="33" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">t</e>
+          <e type="operand">75.58</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="360" top="747" width="353" height="245" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="0.929875565588267" scale_y="18604.9689078209" scale_z="0.929875565588267" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-120" transpose_y="124" transpose_z="0">
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">Uc</e>
+        </input>
+      </plot>
+    </region>
+    <region left="0" top="774" width="140" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τexp</e>
+          <e type="operand">t</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0252</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="810" width="175" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τexp</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">25193.3333</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="846" width="179" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Iin</e>
+          <e type="operand">Uin</e>
+          <e type="operand">R</e>
+          <e type="operand">Rk</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0421</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="882" width="166" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Ion</e>
+          <e type="operand">Uon</e>
+          <e type="operand">R</e>
+          <e type="operand">Rk</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1053</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="918" width="219" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ULin</e>
+          <e type="operand">Uon</e>
+          <e type="operand">Iin</e>
+          <e type="operand">R</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">12.9895</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="936" width="179" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ULss</e>
+          <e type="operand">Ion</e>
+          <e type="operand">Rk</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.5263</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1071" width="212" height="60" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">I</e>
+          <e type="operand">Uon</e>
+          <e type="operand">R</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operand">e</e>
+          <e type="operand">x</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0.1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1134" width="234" height="52" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">Ul</e>
+          <e type="operand">Uon</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">e</e>
+          <e type="operand">x</e>
+          <e type="operand">τ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">13</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1197" width="351" height="217" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="125.820121067239" scale_y="132.993217990017" scale_z="125.820121067239" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-87" transpose_y="40" transpose_z="0">
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">I</e>
+        </input>
+      </plot>
+    </region>
+    <region left="0" top="1449" width="355" height="245" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="1.32188302299979" scale_y="143.333147119844" scale_z="1.32188302299979" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-140" transpose_y="-105" transpose_z="0">
+        <input>
+          <e type="operand">x</e>
+          <e type="function" args="1">Ul</e>
+        </input>
+      </plot>
+    </region>
+  </regions>
+</worksheet>

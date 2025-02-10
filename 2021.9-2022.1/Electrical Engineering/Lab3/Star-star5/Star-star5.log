@@ -1,0 +1,25 @@
+Circuit: * C:\Users\Starsun Cao\OneDrive\Learning Materials\2021.9-2022.1\Electrical Engineering\Lab\03\Star-star5\Star-star5.asc
+
+WARNING: Node NC_01 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by VB.
+WARNING: Less than two connections to node NC_02.  This node is used by LB.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Oct 27 16:43:28 2021
+Total elapsed time: 0.118 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 24511
+traniter = 24508
+tranpoints = 12255
+accept = 7580
+rejected = 4675
+matrix size = 12
+fillins = 1
+solver = Normal
+Matrix Compiler1: 410 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 784 bytes object code size  0.1/0.1/[0.1]
+

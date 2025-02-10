@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+ <script type="text/javascript" src="../static/js/jquery.js"></script>
+<body>
+<h1>hhhh</h1>
+<form action="/login">
+    账号:<input name="name" value = "{id} "><br>
+    密码:<input name="psw">
+    <input type = "submit">
+    </form>
+<button>aa</button>
+</body>
+<script>
+    $("button").click(function(){
+        $.ajax({
+            url:"/ajax",
+            type:"post",
+            data:{"name":"李四","score":99},
+            success:function (d){
+                $("h1").html("武汉感染人数"+d)
+            },error:function (){
+                alert("发送请求失败")
+            }
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,47 @@
+SeriousDlqin2yrs    
+Произойдет ли просрочка платежа на 90 или более дней в ближайшие 2 года (Y/N)
+Will the payment be overdue by 90 days or more in the next 2 years (Y/N)
+
+
+RevolvingUtilizationOfUnsecuredLines    
+Процент оставшихся денег на всех кредитных картах   (%)
+Percentage of remaining money on all credit cards (%)
+
+
+age 
+Возраст (integer)
+Age (integer)
+
+
+NumberOfTime30-59DaysPastDueNotWorse    
+Количество кратковременных просрочек платежа (30-59 дней) за последние 2 года   (integer)
+Number of short-term payment delays (30-59 days) over the last 2 years (integer)
+
+
+DebtRatio   
+Выплачиваемые в месяц проценты от долга, алименты, бытовые расходы, деленные на месячный доход (если месячный доход неизвестен, то абсолютная величина выплат)  (%)
+Monthly interest on debt, alimony, household expenses divided by monthly income (if monthly income is unknown, then the absolute amount of payments) (%)
+
+
+MonthlyIncome   
+Месячный доход  (real)
+Monthly income (real)
+
+NumberOfOpenCreditLinesAndLoans 
+Количество кредитов (или кредитных карт) за исключением ипотеки (integer)
+Number of loans (or credit cards) excluding mortgages (integer)
+
+NumberOfTimes90DaysLate 
+Кредитная история: количество серьезных просрочек платежа на 90 дней или более (integer)
+Credit history: the number of serious payment delays of 90 days or more (integer)
+
+NumberRealEstateLoansOrLines    
+Количество ипотек   (integer)
+Number of mortgages (integer)
+
+NumberOfTime60-89DaysPastDueNotWorse    
+Количество среднесрочных просрочек платежа (60-89 дней) за последние 2 года (integer)
+
+NumberOfDependents  
+Количество иждивенцев в семье, включая самого клиента   (integer)
+The number of dependents in the family, including the client himself (integer)

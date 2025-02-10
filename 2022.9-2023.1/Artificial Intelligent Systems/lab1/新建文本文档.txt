@@ -1,0 +1,12 @@
+male(xinyang).
+father(fangyi,xinyang).
+son(xinyang,fangyi).
+cousin(zixiang,honglu).
+married(fangyi,1990).
+married(fangyi,2001).
+grandfather(yunyou,zixiang).
+granduncle(yunmian,xinyang).
+niece(honglu,fangyi).
+brother(fangyi,xuefang).
+sister(minhua,chenjie).
+aunt(yiyi,xinyang).

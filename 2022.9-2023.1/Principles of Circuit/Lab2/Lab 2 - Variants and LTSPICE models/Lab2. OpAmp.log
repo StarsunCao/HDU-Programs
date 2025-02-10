@@ -1,0 +1,42 @@
+Removed duplicate values listed in .step statementCircuit: * C:\Users\a\OneDrive\Learning Materials\2022.9-2023.1\Principles of Circuit\Lab_2\Lab 2 - Variants and LTSPICE models\Lab2. OpAmp.asc
+
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u9:1)
+Ignoring empty pin current: Ix(u9:2)
+Ignoring empty pin current: Ix(u9:1)
+Ignoring empty pin current: Ix(u9:2)
+.step r1=10890 r_fb=5940 r_load=10000
+.step r1=11000 r_fb=5940 r_load=10000
+.step r1=11110 r_fb=5940 r_load=10000
+.step r1=10890 r_fb=6000 r_load=10000
+.step r1=11000 r_fb=6000 r_load=10000
+.step r1=11110 r_fb=6000 r_load=10000
+.step r1=10890 r_fb=6060 r_load=10000
+.step r1=11000 r_fb=6060 r_load=10000
+.step r1=11110 r_fb=6060 r_load=10000
+.step r1=10890 r_fb=5940 r_load=100000
+.step r1=11000 r_fb=5940 r_load=100000
+.step r1=11110 r_fb=5940 r_load=100000
+.step r1=10890 r_fb=6000 r_load=100000
+.step r1=11000 r_fb=6000 r_load=100000
+.step r1=11110 r_fb=6000 r_load=100000
+.step r1=10890 r_fb=6060 r_load=100000
+.step r1=11000 r_fb=6060 r_load=100000
+.step r1=11110 r_fb=6060 r_load=100000
+
+Date: Wed Nov 23 22:25:51 2022
+Total elapsed time: 0.545 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 18
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 31
+fillins = 32
+solver = Normal
+Matrix Compiler1:     158 opcodes
+Matrix Compiler2: 3.05 KB object code size

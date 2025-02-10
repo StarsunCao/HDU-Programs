@@ -1,0 +1,12 @@
+<persons>
+    <person id="1">
+        <name>Van Darkholme</name>
+        <birthday>1972.10.24</birthday>
+        <city>Guangdong</city>
+        <friends>Billy Herrington, Ikariya Biollante</friends>
+        <gender>Male</gender>
+        <about>Van's full stage name is Van Darkholm, but as his real name has never been revealed, he is popularly known simply as Van. Born in Vietnam, Van is a well-known action actor and director in western philosophical films. In the 1990s, due to his physique, he also served as a fashion model. After entering the film industry, he also played the roles of Xiao Hei and Andy Lau in the Adventurer
+        </about>
+    </person>
+    
+</persons>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="../static/css.css" rel="stylesheet" type="text/css">
+    <title>淘宝商品分析</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>淘宝商品分析</h1>
+        <!-- 搜索栏 -->
+        <div class="container">
+            <form action="/search" class="parent">
+                <input type="text" name = "input" placeholder="搜索" class="search" id="staff">
+                <input type="submit" value="Π一下" id="btn_submit" onclick="btnAction()">
+            </form>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#">链接</a>
+        <a href="#">链接</a>
+        <a href="#">链接</a>
+        <a href="#" class="right">链接</a>
+    </div>
+
+    <div class="row"style="background-color: #333333">
+        <div class="side"style="background-color: #333333">
+            <h2>排行榜</h2>
+            <div class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('www.baidu.com')">
+                <table>
+                    <tr>
+                        <td><img id="picture" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="block" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('www.baidu.com')"></div>
+        </div>
+        <div class="main"style="background-color: #333333">
+            <table>
+                <tr>
+                    <td><div id="l" style="width: 500px;height:400px;"></div></td>
+                    <td> <div id="r" style="width: 500px;height:400px;"></div></td>
+
+                </tr>
+                <tr><div id="c" style="width: 900px;height:500px;"></div></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 id="tim">底部内容</h2>
+    </div>
+</body>
+    <script src="../static/js/echarts.min.js"></script>
+    <script src="../static/js/china.js"></script>
+    <script type="text/javascript" src="../static/js/Js.js"></script>
+    <script type="text/javascript" src="../static/js/map.js"></script>
+    <script type="text/javascript" src="../static/js/right.js"></script>
+    <script type="text/javascript" src="../static/js/left.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/controller.js"></script>
+ <script type="text/javascript" >
+       function gettime(){
+    $.ajax({
+url:"/time",
+        timeout:10000,
+        success:function (data){
+        $("#tim").html(data)
+        },error:function (xhr,type,errorThrown){
+
+        }
+    });
+}
+function getdata(){
+         $.ajax({
+url:"/data",
+        timeout:10000,
+        success:function (data){
+            $("#num").text(data.num)
+            $("#name").text(data.name)
+            $("#volume").text(data.volume)
+            $("#prise").text(data.prise)
+            $('#picture').attr("src",data.picture);
+        },error:function (xhr,type,errorThrown){
+
+        }
+    });
+
+}
+function get_right_data(){
+    $ajax({
+        url:"/c2",
+        success:function (data){
+        roption.series.data[0]=data.y1
+            roption.series.data[1]=data.y2
+            roption.series.data[2]=data.y3
+            roption.series.data[3]=data.y4
+            roption.series.data[4]=data.y5
+            roption.setOption(roption)
+        },error:function (xhr,type,errorThrown){
+
+        }
+    })
+}
+    setInterval(get_right_data,1000)
+      setInterval(gettime,1000)
+    setInterval(getdata,1000)
+ </script>
+</html>

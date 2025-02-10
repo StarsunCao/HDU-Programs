@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace是用于绑定Dao接口的，即面向接口编程-->
+<!--修改1-->
+<mapper namespace="cn.group22.mapper.userMapper">
+    <!--修改2-->
+    <resultMap id="userResultMap" type="cn.group22.entity.user">
+        <!--        修改3 主键设置-->
+        <id column="User_ID" jdbcType="INTEGER" property="User_ID"/>
+        <!-- 修改4非主键类且JDBC没datetime属性，只有date或time    -->
+        <result column="Password" jdbcType="VARCHAR" property="Password"/>
+        <result column="Admin" jdbcType="BOOLEAN" property="Admin"/>
+        <result column="Status" jdbcType="INTEGER" property="Status"/>
+    </resultMap>
+
+    <select id="findByUserID" resultMap="userResultMap">
+        select * from user where User_ID = #{User_ID}
+    </select>
+
+    <insert id="addUser" parameterType="cn.group22.entity.user">
+        insert into user values(#{User_ID},#{Password},0,1)
+    </insert>
+
+    <update id="updatePassword" parameterType="cn.group22.entity.user">
+        update user set Password = #{Password} where User_ID = #{User_ID}
+    </update>
+
+    <update id="changeStatus" parameterType="cn.group22.entity.user">
+        update user set Status = #{Status} where User_ID = #{User_ID}
+    </update>
+
+</mapper>

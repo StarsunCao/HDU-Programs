@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F038b61856dd5df532f875520f69cc2e.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628746828&t=71399a5972dfbaf4dc7cb32496a67235);
+            background-repeat: repeat;
+            background-size: cover;
+            min-width: 100%;
+        }
+
+
+        .login {
+            padding-top: 30px;
+            text-align: center;
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            font-family: sans-serif;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.801);
+            top: 150px;
+            left: calc(50% - 250px);
+        }
+
+        .disappear {
+            animation: myAnimation 1.5s forwards;
+        }
+
+        @keyframes myAnimation {
+            from {
+                top: 150px;
+                opacity: 1;
+            }
+
+            to {
+                top: -300px;
+                opacity: 0;
+            }
+        }
+
+        #loginButton {
+            color: white;
+            background-color: rgb(39, 112, 221);
+            border-radius: 4px;
+            height: 35px;
+            width: 200px;
+            margin-top: 24px;
+            border: 0px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        #username {
+            margin-top: 24px;
+
+        }
+
+        #password {
+            margin-top: 24px;
+
+        }
+
+        input {
+            height: 24px;
+            padding: 2px 2px 2px 2px;
+        }
+
+        #inputPassword {
+            margin-left: 15px;
+        }
+
+
+        #chat-containt {
+            display: none;
+            flex-wrap: nowrap;
+        }
+
+        #friendlist {
+            margin-left: 5%;
+            width: 27%;
+            height: 700px;
+            background-color: black;
+        }
+
+        #chatroom {
+            width: 63%;
+            height: 700px;
+            background-color: rgb(230, 230, 230);
+        }
+
+        #name {
+            margin-top: 5%;
+            margin-left: 5%;
+            color: white;
+            font-size: large;
+        }
+
+        #title {
+            margin-top: 2%;
+            font-size: larger;
+            text-align: center;
+            color: black;
+        }
+
+        #line {
+            width: 90%;
+            height: 1px;
+            margin: auto;
+            margin-top: 15px;
+            background-color: rgba(128, 128, 128, 0.452);
+        }
+
+        .Name {
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            border: solid 1px;
+            border-color: rgba(0, 0, 0, 0.336);
+            background-color: rgba(240, 248, 255, 0);
+            height: 25px;
+            width: 25px;
+            border-radius: 25px;
+            font-size: smaller;
+            padding: 5px 5px 5px 5px;
+
+        }
+
+        .myBlock {
+            background-color: rgb(60, 120, 209);
+            margin-right: 1%;
+            border: 2px;
+            border-radius: 2px;
+            border-color: rgb(0, 0, 0);
+            padding: 5px 8px 5px 8px
+        }
+
+        .otherBlock {
+            background-color: white;
+            margin-left: 1%;
+            border: 2px;
+            border-radius: 2px;
+            border-color: rgb(0, 0, 0);
+            padding: 5px 8px 5px 8px
+        }
+
+        .myMessage {
+            margin-top: 3%;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .otherMessage {
+            margin-top: 3%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .friends {
+            margin-top: 5%;
+            margin-left: 5%;
+            color: white;
+            font-size: medium;
+        }
+
+        .area {
+            height: 84%;
+            overflow: auto;
+        }
+
+        #bottom {
+            margin-top: 6px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #inputMessage {
+            margin-right: 2%;
+            width: 85%;
+            padding-top: 1px;
+            padding-left: 1px;
+        }
+
+        #send {
+            width: 10%;
+            height: 25px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #friend-field {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login" id="div1">
+        <h2>账号登录</h2>
+        <div id="username">
+            <span>用户名：</span>
+            <input id="inputName" placeholder="请输入用户名" />
+        </div>
+        <div id="password">
+            <span>密码：</span>
+            <input id='inputPassword' placeholder="请输入密码" />
+        </div>
+        <div><button id="loginButton">登录</button></div>
+        <div class="disappear"></div>
+    </div>
+
+    <div id="chat-containt">
+        <div id="friendlist">
+            <div id="name">Dick</div>
+            <div id="friend-field">
+                <div class="friends" id="f1">Van</div>
+                <div class="friends" id="f2">Billy</div>
+                <div class="friends" id="f3">Mark_Wolf</div>
+                <div class="friends" id="f4">Richardo_Milos</div>
+            </div>
+        </div>
+        <div id="chatroom">
+            <div id="title">Van</div>
+            <div id="line"></div>
+            <div class="area">
+                <div class="myMessage">
+                    <div class="Name">Dick</div>
+                    <div class="myBlock">Hey, bro!</div>
+                </div>
+                <div class="otherMessage">
+                    <div class="Name">Van</div>
+                    <div class="otherBlock">Hey, smart ass!</div>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="bottom">
+                <input id="inputMessage">
+                <button id="send">发送</buttom>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    var Account = {
+        name: 'Dick',
+        password: '114514',
+    }
+
+    function $(select) {
+        return document.querySelector(select);
+    }
+    var loginBtn = $('#loginButton');
+    var loginBox = $('#div1');
+    var chatroomBox = $('#chat-containt');
+    var sendBtn = $('#send');
+
+
+
+    loginBtn.addEventListener('click', function () {
+        var inputName = $('#inputName').value;
+        var inputPassword = $('#inputPassword').value;
+        if (inputName == Account.name && inputPassword == Account.password) {
+            loginBox.classList.add('disappear');
+            setTimeout(function () {
+                chatroomBox.style.display = 'flex'
+            }, 1500);
+        } else {
+            alert("密码错误！")
+        }
+    })
+
+    sendBtn.addEventListener('click', function () {
+        var inputMessage = $('#inputMessage').value;
+        if(inputMessage != ""){
+            var area = $('.area');
+            area.innerHTML = area.innerHTML +
+                '<div class="myMessage">' +
+                '<div class="Name">Dick</div>' +
+                '<div class="myBlock">' + inputMessage + '</div>' +
+                '</div>';
+            $('#inputMessage').value = "";
+        }
+    })
+
+    var historyRecord = {}
+    window.onload = function(){
+        var friends = document.getElementById('friend-field');
+        function nameClick(e){
+            var targetFriend = e.target.innerHTML;
+            var thisFriend = $('#title').innerHTML;
+            if(thisFriend != targetFriend){
+                historyRecord[thisFriend] = $('.area').innerHTML;
+                if(historyRecord[targetFriend]){
+                    targetRecord = historyRecord[targetFriend];
+                }else{
+                    targetRecord = ""; 
+                }
+                $('.area').innerHTML = targetRecord;
+                $('#title').innerHTML = targetFriend;
+            }   
+        }
+        friends.addEventListener('click',nameClick)
+    }
+
+
+</script>
+
+</html>

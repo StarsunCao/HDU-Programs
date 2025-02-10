@@ -1,0 +1,43 @@
+<template>
+<div>
+  <el-table :data="tableData" style="width: 100%" v-if="JSON.parse(admin) == true">
+    <el-table-column prop="uid" label="ID" width="1000"> </el-table-column>
+    <el-table-column prop="status" label="status" width="300">
+      <el-switch
+        v-model="tableData.value"
+        active-color="#13ce66"
+        inactive-color="#ff4949"
+      >
+      </el-switch>
+    </el-table-column>
+  </el-table>
+  <h1 class="warn" v-if="JSON.parse(admin) == false">you cannot admin</h1>
+</div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      tableData: [],
+      admin: localStorage.getItem("admin"),
+    };
+  },
+  methods: {
+    findUsers() {
+      this.req({
+        url: "/apartment/findAllA",
+        data: {},
+        method: "GET",
+      }).then((res) => {
+        this.tableData = res.data;
+      });
+    },
+  },
+};
+</script>
+<style>
+.warn {
+  position: absolute;
+  left: 40%;
+}
+</style>

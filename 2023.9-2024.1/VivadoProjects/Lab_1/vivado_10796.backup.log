@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 11 19:50:58 2023
+# Process ID: 10796
+# Current directory: C:/Users/kotoriee/Documents/Tencent Files/1124911924/FileRecv/Lab1/Lab1/Lab_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19648 C:\Users\kotoriee\Documents\Tencent Files\1124911924\FileRecv\Lab1\Lab1\Lab_1\Lab_1.xpr
+# Log file: C:/Users/kotoriee/Documents/Tencent Files/1124911924/FileRecv/Lab1/Lab1/Lab_1/vivado.log
+# Journal file: C:/Users/kotoriee/Documents/Tencent Files/1124911924/FileRecv/Lab1/Lab1/Lab_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/kotoriee/Documents/Tencent Files/1124911924/FileRecv/Lab1/Lab1/Lab_1/Lab_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/admin/Desktop/Lab1/Lab_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2019.1/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 11 19:51:13 2023...

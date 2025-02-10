@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="../static/css.css" rel="stylesheet" type="text/css">
+    <title>淘宝商品分析</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>淘宝商品分析</h1>
+        <!-- 搜索栏 -->
+        <div class="container">
+            <form action="" class="parent">
+                <input type="text" placeholder="搜索" class="search" id="staff">
+                <input type="button" value="Π一下" id="btn_submit" onclick="btnAction()">
+            </form>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a type = "button"id="shuaxin" href="#" class="right">刷新</a>
+    </div>
+
+    <div class="row"style="background-color: #333333">
+        <div class="side"style="background-color: #333333">
+            <h2>排行榜</h2>
+            <div id="1" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('a')">
+                <table>
+                    <tr>
+                        <td><img id="picture1" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name1" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num1"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise1" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume1" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="2" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture2" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name2" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num2"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise2" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume2" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="3" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture3" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name3" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num3"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise3" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume3" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="4" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture4" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name4" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num4"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise4" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume4" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="5" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture5" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name5" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num5"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise5" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume5" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="6" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture6" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name6" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num6"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise6" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume6" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="7" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture7" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name7" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num7"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise7" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume7" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="8" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture8" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name8" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num8"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise8" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume8" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="9" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture9" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name9" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num9"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise9" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume9" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="10" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture10" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name10" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num10"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise10" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume10" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="11" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture11" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name11" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num11"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise11" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume11" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="12" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture12" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name12" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num12"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise12" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume12" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="13" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture13" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name13" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num13"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise13" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume13" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="14" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture14" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name14" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num14"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise14" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume14" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="15" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture15" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name15" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num15"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise15" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume15" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="16" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture16" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name16" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num16"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise16" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume16" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div id="17" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture17" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name17" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num17"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise17" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume17" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="18" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('a')">
+                <table>
+                    <tr>
+                        <td><img id="picture18" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name18" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num18"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise18" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume18" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="19" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('a')">
+                <table>
+                    <tr>
+                        <td><img id="picture19" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name19" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num19"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise19" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume19" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+             <div id="20" class="fakeimg" style="height: 100px;width: 100%;" onclick="window.open('https://detail.tmall.com/item.htm?id=606736480517&ns=1&abbucket=19')">
+                <table>
+                    <tr>
+                        <td><img id="picture20" src="https://img.php.cn/upload/article/202104/30/2021043015415752149.jpg" height="60" width="60" /></td>
+                        <td style="padding-left: 10px;">
+                            <div id="name20" class="overflow" style="height: 30px;width: 160px;">商品名sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+                            <table style="padding-left: 0px;">
+                                <td>
+                                    <div  class="word">排名：</div>
+                                    <div id="num20"class="prise">1</div>
+                                </td>
+                                <td>
+                                    <div class="word">价格：</div>
+                                    <div id="prise20" class="prise">1999</div>
+                                </td>
+                                <td>
+                                    <div class="word">销售量：</div>
+                                    <div id="volume20" class="prise">1999</div>
+                                </td>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+
+        </div>
+        <div class="main"style="background-color: #333333">
+            <table>
+                <tr>
+                    <td><div id="l" style="width: 500px;height:400px;"></div></td>
+                    <td> <div id="r" style="width: 500px;height:400px;"></div></td>
+
+                </tr>
+                <tr><div id="c" style="width: 900px;height:500px;"></div></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 id="tim">底部内容</h2>
+    </div>
+</body>
+    <script src="../static/js/echarts.min.js"></script>
+    <script src="../static/js/china.js"></script>
+    <script type="text/javascript" src="../static/js/Js.js"></script>
+    <script type="text/javascript" src="../static/js/map.js"></script>
+    <script type="text/javascript" src="../static/js/right.js"></script>
+    <script type="text/javascript" src="../static/js/left.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/controller.js"></script>
+ <script type="text/javascript" >
+       function gettime(){
+    $.ajax({
+url:"/time",
+        timeout:10000,
+        success:function (data){
+        $("#tim").html(data)
+        },error:function (xhr,type,errorThrown){
+
+        }
+    });
+}
+function getdata(){
+           for(var i=0 ;i<20;i++){
+               $.get('/data', {'method':'GET',  'text':i}, function(data){
+            $("#num"+(data.num).toString()).text(data.num)
+            $("#name"+(data.num).toString()).text(data.name)
+            $("#volume"+(data.num).toString()).text(data.volume)
+            $("#prise"+(data.num).toString()).text(data.prise)
+            $('#picture'+(data.num).toString()).attr("src",data.picture);
+            $('#'+(data.num).toString()).attr("onclick",window.open("+data.html+"));
+            })
+
+           }
+        }
+function get_right1_data(){
+    $.ajax({
+        url:"/r1",
+        success:function (data){
+        roption.series[0].data=[data.y1,data.y2,data.y3,data.y4,data.y5]
+            $("#rightdata1").text([data.y1,data.y2,data.y3,data.y4,data.y5])
+            right.setOption(roption)
+        },error:function (xhr,type,errorThrown){
+
+        }
+    })
+}
+function get_right2_data(){
+    $.ajax({
+        url:"/r2",
+        success:function (data){
+
+        roption.series[1].data=[data.y1,data.y2,data.y3,data.y4,data.y5]
+            right.setOption(roption)
+        },error:function (xhr,type,errorThrown){
+
+        }
+    })
+}
+function get_left_data(){
+    $.ajax({
+        url:"/l",
+        success:function (data){
+        loption.series[0].data=[
+        { value: data.y1 , name: '商品 1' },
+        { value: data.y2 , name: '商品 2' },
+        { value: data.y3 , name: '商品 3' },
+        { value: data.y4 , name: '商品 4' },
+        { value: data.y5 , name: '商品 5' },
+        { value: data.y6 , name: '商品 6' },
+        { value: data.y7 , name: '商品 7' },
+        { value: data.y8 , name: '商品 8' }
+        ]
+            left.setOption(loption)
+        },error:function (xhr,type,errorThrown){
+            alert("error")
+        }
+    })
+}
+function get_map_data(){
+    $.ajax({
+        url:"/map",
+        success:function (data){
+        optionMap.series[0].data=[
+            {'name':'上海', 'value': data.上海},
+                {'name':'北京', 'value': data.北京} ,
+                {'name':'吉林', 'value': data.吉林},
+                {'name':'黑龙江', 'value': data.黑龙江} ,
+                {'name':'四川', 'value': data.四川} ,
+                {'name':'安徽', 'value': data.安徽},
+                {'name':'山东', 'value': data.山东},
+                {'name':'广东', 'value': data.广东},
+                {'name':'江苏', 'value': data.江苏} ,
+                {'name':'河南', 'value': data.河南} ,
+                {'name':'浙江', 'value': data.浙江} ,
+                {'name':'湖北', 'value': data.湖北},
+                {'name':'湖南', 'value': data.湖南} ,
+                {'name':'重庆', 'value': data.重庆} ,
+                {'name':'福建', 'value': data.福建} ,
+                {'name':'陕西', 'value': data.陕西} ,
+                {'name':'山西', 'value': data.山西} ,
+                {'name':'内蒙古', 'value': data.内蒙古} ,
+                {'name':'新疆', 'value': data.新疆} ,
+                {'name':'贵州', 'value': data.贵州} ,
+                {'name':'台湾','value': data.台湾} ,
+                {'name':'海南', 'value': data.海南} ,
+                {'name':'天津', 'value': data.天津} ,
+                {'name':'青海', 'value': data.青海},
+                {'name':'甘肃', 'value': data.甘肃},
+                {'name':'辽宁', 'value': data.辽宁},
+                {'name':'河北', 'value': data.河北} ,
+                {'name':'香港', 'value': data.香港} ,
+                {'name':'澳门', 'value': data.澳门} ,
+                {'name':'广西', 'value': data.广西} ,
+                {'name':'宁夏', 'value': data.宁夏} ,
+                {'name':'云南', 'value': data.云南},
+                {'name':'江西', 'value': data.江西} ,
+                {'name':'西藏', 'value': data.西藏}]
+
+            map.setOption(optionMap);
+        },error:function (xhr,type,errorThrown){
+
+        }
+    })
+}
+
+var staff = document.getElementById('staff');
+
+function btnAction() {
+$.get('/js_get', {'method':'GET',  'text':staff.value}, function(data){setTimeout(alert(data),25000)})
+
+    setTimeout(get_right1_data(),25000);
+    setTimeout(get_right2_data(),25000);
+    setTimeout(et_left_data(),25000);
+    setTimeout(get_map_data(),25000);
+    setTimeout(getdata(),25000);
+       
+}
+$('#shuaxin').click(function(){
+        get_right1_data()
+        get_right2_data()
+        get_left_data()
+        get_map_data()
+        getdata()
+        
+})
+setInterval(gettime,1000)
+ </script>
+</html>

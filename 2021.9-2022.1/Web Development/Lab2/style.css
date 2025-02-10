@@ -1,0 +1,56 @@
+.page-content{
+    max-width: 960px;
+    margin: auto;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid
+}
+.personal-info-content{
+    display: flex;
+}
+.left-side{
+    padding-left: 2px;
+    padding-top: 2px;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid;
+    flex:25%
+}
+.right-side{
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 5%;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid;
+    flex:75%
+}
+.profile-photo{
+    max-width: 260px;
+}
+.user-info-item{
+    margin-left: 10px;
+    display: flex;
+}
+.user-info-item-label{
+    flex: 25%;
+}
+.user-info-item-value{
+    flex: 75%;
+}
+.post{
+    margin: 5px;
+    padding-bottom: 2px ;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid;
+}
+.post-heading{
+    font-size:large;
+    padding: 5px;
+    background-color: rgb(243,243,241);
+}
+
+.post-body{
+    margin: 5px;
+}

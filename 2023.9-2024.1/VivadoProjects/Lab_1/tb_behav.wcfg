@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="392615000001fs"></ZoomEndTime>
+      <Cursor1Time time="392148711000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="95"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb/clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/gpio_rtl_0_tri_o" type="array">
+      <obj_property name="ElementShortName">gpio_rtl_0_tri_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_rtl_0_tri_o[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/gpio_rtl_1_tri_i" type="array">
+      <obj_property name="ElementShortName">gpio_rtl_1_tri_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">gpio_rtl_1_tri_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/reset_rtl_0" type="logic">
+      <obj_property name="ElementShortName">reset_rtl_0</obj_property>
+      <obj_property name="ObjectShortName">reset_rtl_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_ack" type="logic">
+      <obj_property name="ElementShortName">data_ack</obj_property>
+      <obj_property name="ObjectShortName">data_ack</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.second.hand.trading.server.dao.OperationDao">
+        <resultMap id="BaseResultMap" type="com.second.hand.trading.server.model.OperationModel">
+            <id column="id" jdbcType="BIGINT" property="id"/>
+            <result column="user_id" jdbcType="BIGINT" property="userId"/>
+            <result column="idle_id" jdbcType="BIGINT" property="idleId"/>
+            <result column="operation_type" jdbcType="INTEGER" property="type"/>
+            <result column="operation_time" jdbcType="TIMESTAMP" property="operationTime"/>
+        </resultMap>
+            <sql id="Base_Column_List">
+                id, user_id, idle_id, operation_type, operation_time
+            </sql>
+            <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.second.hand.trading.server.model.OperationModel"
+            useGeneratedKeys="true">
+                insert into sh_user_operation (user_id, idle_id, operation_type, operation_time)
+                values (#{userId,jdbcType=BIGINT}, #{idleId,jdbcType=BIGINT}, #{type,jdbcType=INTEGER}, #{operationTime,jdbcType=TIMESTAMP})
+            </insert>
+
+            <select id="getAllUserPreference" resultType="OperationModel">
+                SELECT
+                user_id AS "userId",
+                idle_id AS "idleId",
+                    SUM(
+                            CASE operation_type
+                                WHEN 0 THEN 2
+                                WHEN 1 THEN 3
+                                WHEN 2 THEN 5
+                                WHEN 3 THEN 5
+                                else 0 END
+                        ) AS "value"
+                FROM
+                    sh_user_operation
+                GROUP BY user_id,idle_id
+            </select>
+
+            <select id="countOperationsByDay" resultType="map">
+                SELECT
+                    DATE(operation_time) as operationDate,
+                    COUNT(*) as count
+                FROM
+                    sh_user_operation
+                WHERE
+                    operation_type = #{operationType}
+                    AND operation_time >= #{startTime}
+                GROUP BY
+                    DATE(operation_time)
+                ORDER BY
+                    operationDate ASC
+            </select>
+
+</mapper>

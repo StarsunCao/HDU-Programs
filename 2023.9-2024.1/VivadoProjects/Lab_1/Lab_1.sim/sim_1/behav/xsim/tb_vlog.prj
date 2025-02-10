@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923" \
+"../../../../Lab_1.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../../Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
+"../../../../Lab_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" \
+"../../../../Lab_1.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../Lab_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923" \
+"../../../../Lab_1.srcs/sim_1/new/monitor.sv" \
+"../../../../Lab_1.srcs/sim_1/new/sequencer.sv" \
+
+verilog xil_defaultlib  --include "../../../../Lab_1.srcs/sources_1/bd/design_1/ipshared/c923" \
+"../../../../Lab_1.srcs/sim_1/new/tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var age = 2021 - 2001;
+        var name = 'Dick';
+
+        document.write(`<p>${age}岁，是学生。</p>`);
+
+        var score = 86;
+        var garde;
+        if (score >= 85 && score <= 100) {
+            garde = '优秀';
+        } else if (score < 75 && score >= 60) {
+            garde = '良好';
+        } else if (score >= 75 && score < 85) {
+            garde = '很好'
+        } else {
+            garde = '不及格'
+        }
+        
+        function cal(type,num1,num2){
+            switch(type){
+                case '+': return num1 + num2;break
+                case '-': return num1 - num2;break
+                case '*': return num1 * num2;break
+                case '/': return num1 / num2;break
+                default:
+                    return 'error';
+            }
+        }
+        result = cal('+',1,1);
+        document.write(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
